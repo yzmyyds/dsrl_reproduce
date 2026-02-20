@@ -1,4 +1,5 @@
 #!/bin/bash
+TASK_ID=${1:-57} #added by zimin
 proj_name=DSRL_pi0_Libero
 device_id=0
 
@@ -17,7 +18,8 @@ pip install mujoco==3.3.1
 python3 examples/launch_train_sim.py \
 --algorithm pixel_sac \
 --env libero \
---prefix dsrl_pi0_libero \
+--task_id $TASK_ID \
+--prefix dsrl_pi0_libero_task_$TASK_ID \
 --wandb_project ${proj_name} \
 --batch_size 256 \
 --discount 0.999 \
