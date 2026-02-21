@@ -140,7 +140,10 @@ def main(variant):
         variant.max_timesteps = 400
         
 
-    group_name = variant.prefix + '_' + variant.launch_group_id
+    # group_name = variant.prefix + '_' + variant.launch_group_id
+    #added by zimin
+    group_name = variant.get('launch_group_id', 'libero_default_group')
+    
     wandb_output_dir = tempfile.mkdtemp()
     wandb_logger = WandBLogger(variant.prefix != '', variant, variant.wandb_project, experiment_id=expname, output_dir=wandb_output_dir, group_name=group_name)
 
