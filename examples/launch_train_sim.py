@@ -27,7 +27,9 @@ if __name__ == '__main__':
     parser.add_argument('--query_freq', default=-1, help='query frequency', type=int)
     ##added by zimin
     parser.add_argument('--task_id', default=57, help='Task ID for LIBERO-90', type=int)
-
+    parser.add_argument('--suite_name', type=str, default='libero_90', help='LIBERO suite name')
+    parser.add_argument('--launch_group_id', type=str, default='')
+    
     train_args_dict = dict(
         actor_lr=1e-4,
         critic_lr= 3e-4,

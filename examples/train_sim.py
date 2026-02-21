@@ -112,6 +112,10 @@ def main(variant):
         benchmark_dict = benchmark.get_benchmark_dict()
         task_suite = benchmark_dict["libero_90"]()
         #task_id = 57
+        #added by zimin
+        suite_name = variant.get("suite_name", "libero_90") 
+        task_suite = benchmark_dict[suite_name]()
+
         task_id = variant.task_id
         task = task_suite.get_task(task_id)
         env, task_description = _get_libero_env(task, 256, variant.seed)
@@ -119,6 +123,8 @@ def main(variant):
         variant.task_description = task_description
         variant.env_max_reward = 1
         variant.max_timesteps = 400
+        #added by zimin
+        print(f"Benchmark: {suite_name} | Task Index: {task_id} | Name: {task_description}")
     elif variant.env == 'aloha_cube':
         from gymnasium.envs.registration import register
         register(
