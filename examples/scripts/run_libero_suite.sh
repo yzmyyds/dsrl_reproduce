@@ -1,13 +1,20 @@
 #!/bin/bash
 
 SUITE_NAME=${1:-"libero_spatial"}
-GROUP_ID="${SUITE_NAME}_$(date +%m%d_%H%M)"
 proj_name=DSRL_pi0_Libero
 
 # 通过参数读取范围和 GPU
-START_ID=${2:-"0"}
-END_ID=${3:-"0"}
-gpu_id=${4:-"0"}
+gpu_id=${2:-"0"}
+START_ID=${3:-"0"}
+END_ID=${4:-"0"}
+
+if [ -n "$5" ]; then
+    GROUP_ID="$5"
+    echo "📌 Using manual Group ID: $GROUP_ID"
+else
+    GROUP_ID="${SUITE_NAME}_$(date +%m%d_%H%M)"
+    echo "🕒 Using auto-generated Group ID: $GROUP_ID"
+fi
 
 # --- 关键修正：必须加 $ 符号 ---
 export PYTHONPATH=$(pwd):$(pwd)/LIBERO:$PYTHONPATH
