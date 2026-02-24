@@ -29,6 +29,8 @@ export PYOPENGL_PLATFORM=egl
 export OPENPI_DATA_HOME=./openpi
 export XLA_PYTHON_CLIENT_PREALLOCATE=false
 
+export XLA_PYTHON_CLIENT_MEM_FRACTION=0.80
+
 run_task() {
     local task_id=$1
     export EXP=./logs/${proj_name}/${GROUP_ID}/task_${task_id}
