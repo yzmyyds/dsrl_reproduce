@@ -70,4 +70,4 @@ do
 
 done
 
-echo "🎉 GPU $gpu_id tasks ($START_ID to $END_ID) completed!"
+echo "🎉 GPU $gpu_id tasks $START_ID to $END_ID completed!"
