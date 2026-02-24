@@ -1,3 +1,6 @@
+################################################################################
+## LIBERO_90
+################################################################################
 ID 00: close the top drawer of the cabinet
 ID 01: close the top drawer of the cabinet and put the black bowl on top of it
 ID 02: put the black bowl in the top drawer of the cabinet
@@ -87,4 +90,61 @@ ID 85: pick up the white mug and place it to the right of the caddy
 ID 86: pick up the book in the middle and place it on the cabinet shelf
 ID 87: pick up the book on the left and place it on top of the shelf
 ID 88: pick up the book on the right and place it on the cabinet shelf
-ID 89: pick up the book on the right and place it under the cabinet shelf
+ID 89: pick up the book on the right and place it under the cabinet shel
+
+################################################################################
+## LIBERO_Spatial
+################################################################################
+0,pick up the black bowl and place it on the plate
+1,pick up the black bowl and place it on the left side of the plate
+2,pick up the black bowl and place it on the right side of the plate
+3,pick up the black bowl and place it in front of the plate
+4,pick up the alphabet soup and place it in the left basket
+5,pick up the alphabet soup and place it in the right basket
+6,pick up the cream cheese and place it in the left basket
+7,pick up the cream cheese and place it in the right basket
+8,pick up the tomato sauce and place it in the left basket
+9,pick up the tomato sauce and place it in the right basket
+
+################################################################################
+## LIBERO_Object
+################################################################################
+0,pick up the alphabet soup and place it in the basket
+1,pick up the cream cheese and place it in the basket
+2,pick up the ketchup and place it in the basket
+3,pick up the tomato sauce and place it in the basket
+4,pick up the butter and place it in the basket
+5,pick up the milk and place it in the basket
+6,pick up the orange juice and place it in the basket
+7,pick up the chocolate pudding and place it in the basket
+8,pick up the bbq sauce and place it in the basket
+9,pick up the adobo sauce and place it in the basket
+
+################################################################################
+## LIBERO_Goal
+################################################################################
+0,put the bowl on the plate
+1,put the bowl on the rack
+2,put the bowl on the stove
+3,put the bowl in the cabinet
+4,put the wine bottle on the rack
+5,put the wine bottle on the table
+6,put the wine bottle in the basket
+7,put the wine bottle in the cabinet
+8,put the mug on the plate
+9,put the mug in the cabinet
+
+################################################################################
+## LIBERO_Long
+################################################################################
+Task ID,Task Description (English)
+0,open the top drawer and put the bowl inside
+1,open the middle drawer and put the bowl inside
+2,open the bottom drawer and put the bowl inside
+3,open the oven and put the bowl inside
+4,open the microwave and put the bowl inside
+5,close the top drawer
+6,close the middle drawer
+7,close the bottom drawer
+8,open the cabinet and put the bowl inside
+9,turn on the stove and put the bowl on it
